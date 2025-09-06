@@ -1,0 +1,1 @@
+import cv2; import numpy as np; from paddleocr import PaddleOCR; cap = cv2.VideoCapture("tests/test.mp4"); ret, frame = cap.read(); ocr = PaddleOCR(use_angle_cls=True, lang="en"); result = ocr.ocr(frame); print("Content of OCRResult:", result[0].json); cap.release()

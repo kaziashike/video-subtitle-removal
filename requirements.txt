@@ -1,0 +1,33 @@
+# Core dependencies
+numpy>=1.21.0
+opencv-python>=4.5.0
+Pillow>=8.3.0
+
+# Text Detection
+paddlepaddle>=2.4.0
+paddleocr>=2.6.0
+
+# Inpainting
+torch>=1.10.0
+torchvision>=0.11.0
+# LaMa inpainting - installed manually from source
+# git clone https://github.com/advimman/lama.git
+
+# Optical Flow
+scipy>=1.7.0
+# RAFT optical flow - installed manually from source
+# git clone https://github.com/princeton-vl/RAFT.git
+
+# Super Resolution
+basicsr>=1.4.2
+# Real-ESRGAN - installed manually from source
+# git clone https://github.com/xinntao/Real-ESRGAN.git
+
+# Utilities
+tqdm>=4.64.0
+PyYAML>=6.0
+
+# Development
+pytest>=7.1.0
+black>=22.0.0
+flake8>=5.0.0

@@ -1,0 +1,32 @@
+# Project Configuration
+
+project_name: "Video Subtitle Removal"
+version: "1.0.0"
+
+# Text Detection Configuration
+text_detection:
+  model: "PaddleOCR"
+  detector: "DBNet"
+  confidence_threshold: 0.5
+  padding: 5
+
+# Inpainting Configuration
+inpainting:
+  model: "LaMa"
+  input_size: 512
+
+# Refinement Configuration
+refinement:
+  method: "TotalDenoising"
+  edge_feathering: true
+
+# Temporal Consistency Configuration
+temporal_consistency:
+  method: "RAFT"
+  optical_flow: true
+
+# Super Resolution Configuration
+super_resolution:
+  model: "Real-ESRGAN"
+  scale: 2
+  output_resolution: "1080p"
